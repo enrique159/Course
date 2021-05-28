@@ -12,10 +12,9 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  background-color: rgb(206, 183, 241);
   box-sizing: border-box;
   height: 100%;
-  width: 44%;
+  flex-grow: 100;
   padding: 24px 48px;
 }
 </style>
