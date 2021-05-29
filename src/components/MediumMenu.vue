@@ -28,8 +28,15 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <span>hola</span>
+        <div class="scrolldiv">
+          <card />
+          <div style="height: 18px"></div>
+          <card-purple />
+          <div style="height: 18px"></div>
+          <card-yellow />
+          <div style="height: 18px"></div>
+          <card-red />
+          <div style="height: 18px"></div>
         </div>
       </div>
     </div>
@@ -37,7 +44,12 @@
 </template>
 
 <script>
+import Card from "./Cards/Card.vue";
+import CardPurple from "./Cards/CardPurple.vue";
+import CardRed from "./Cards/CardRed.vue";
+import CardYellow from "./Cards/CardYellow.vue";
 export default {
+  components: { Card, CardPurple, CardYellow, CardRed },
   name: "MediumMenu",
 };
 </script>
@@ -47,14 +59,16 @@ export default {
   box-sizing: border-box;
   height: 100%;
   width: 30%;
+  max-width: 488px;
   padding: 24px 0;
 
   .contenedor {
     box-sizing: border-box;
     background-color: rgb(239, 243, 248);
     border-radius: 36px;
-    padding: 36px 36px 0;
+    padding: 36px 18px 0;
     height: 100%;
+    position: relative;
 
     .header {
       display: flex;
@@ -86,8 +100,7 @@ export default {
         background-color: #0067ff;
         box-shadow: 0px 12px 16px 2px rgba(0, 102, 255, 0.295);
         &:hover {
-          margin-top: 4px;
-          box-shadow: 0px 8px 16px 2px rgba(0, 102, 255, 0.295);
+          box-shadow: 0px 8px 16px 4px rgba(0, 102, 255, 0.5);
         }
       }
     }
@@ -181,11 +194,21 @@ export default {
           }
         }
       }
-
-      .card {
-        background-color: #0067ff;
-        border-radius: 24px;
-        height: 148px;
+      .scrolldiv {
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        top: 186px;
+        bottom: 0px;
+        left: 24px;
+        right: 24px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+        /* width */
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
   }
