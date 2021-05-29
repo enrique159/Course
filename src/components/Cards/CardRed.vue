@@ -83,11 +83,10 @@ export default {
       h6 {
         margin: 0;
         text-align: center;
-        width: 60%;
+        width: 48px;
         color: white;
         font-size: 0.7rem;
         font-weight: 600;
-        margin-right: 2px;
       }
     }
   }
