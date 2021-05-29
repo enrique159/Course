@@ -1,19 +1,8 @@
-# course
+# Course dashboard using Vue.js
+## Sitio web Front-end sin Frameworks de CSS
 
-## Project setup
-```
-npm install
-```
+Ejercicio de Vue.js basado en el diseño de Ariuka en [Dribbble](https://dribbble.com/shots/11944612-Course-web-app)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> Enlace a sitio en vivo: [Shoes Ecommerce](https://course.vercel.app/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Imagen](https://cdn.dribbble.com/users/1343196/screenshots/11944612/media/edba19e7a81c3e8fe31c82cb1011199c.png)
